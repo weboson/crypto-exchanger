@@ -1,5 +1,5 @@
 import React from 'react';
-import  '../assets/css/soft-ui-dashboard.css'
+import  '../../public/css/soft-ui-dashboard.css'
 
 const page = () => {
     return (

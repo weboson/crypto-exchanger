@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import TheSidenav from "../components/TheSidenav"
 import  'bootstrap/dist/css/bootstrap.min.css'
-import  "./assets/img/apple-icon.png"
-import  "./assets/css/nucleo-icons.css"
-import  "./assets/css/nucleo-svg.css"
-import  "./assets/css/nucleo-svg.css"
-import "./assets/css/soft-ui-dashboard.css"
+import  "../public/img/apple-icon.png"
+import  "../public/css/nucleo-icons.css"
+import  "../public/css/nucleo-svg.css"
+import  "../public/css/nucleo-svg.css"
+import "../public/css/soft-ui-dashboard.css"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="g-sidenav-show  bg-gray-100">
+        <TheSidenav />
         {children}
       </body>
     </html>
